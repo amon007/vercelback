@@ -22,7 +22,7 @@ app.use(
 
 app.use(express.json())
 app.use(fileUpload({}))
-app.use(express.static('static'))
+app.use(express.static('public'))
 app.use('/auth', authRoutes)
 app.use('/post', postRoutes)
 app.get('*', (req,res)=>{
