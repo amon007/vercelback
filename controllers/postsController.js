@@ -28,7 +28,7 @@ class PostsController {
                 
                 const fileName = uuid.v4() + '.jpg';
                 // const filePath = path.resolve('static', fileName);
-                const filePath = 'static/' + fileName; 
+                const filePath = 'public/' + fileName; 
             
                 const uploadPromise = new Promise((resolve, reject) => {
                   file.mv(filePath, (err) => {
